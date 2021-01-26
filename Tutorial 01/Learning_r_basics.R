@@ -385,5 +385,66 @@ for ( i in v){
 
 # -------------------------------------- FUNCTIONS ------------------------------
 
+# R has a number of in built functions which can be used in our program as well
+# as R allows us to define our own functions as well where we can use them with
+# in our program.
+
+# BUILT IN FUNCTIONS 
+
+# Create a sequence of numbers from 32 to 44.
+print(seq(32,44))
+
+# Find mean of numbers from 25 to 82.
+print(mean(25:82))
+
+# Find sum of numbers from 41 to 68.
+print(sum(41:68))
+
+
+# USER DEFINED FUNCTIONS
+
+# Create a function to print squares of numbers in sequence.
+# (WITH ARGUEMENT)
+myFunction <- function(number){
+  for (i in 1:number) {
+    print(i^2)
+  }
+}
+
+myFunction(10) # <---- call the function
+
+# (WITHOUT ARGUEMENT)
+myFunction <- function() {
+  for(i in 1:5) {
+    print(i^2)
+  }
+}
+
+myFunction() # <---- call the function
+
+# Calling a Function with Argument Values (by position and by name)
+
+# Create a function with arguments.
+myFunction <- function(a, b, c) {
+  result <- a * b + c
+  print(result)
+}
+
+# Call the function by position of arguments.
+myFunction(5, 3, 11)
+
+# Call the function by names of the arguments.
+myFunction(a=11, b=5, c=3)
+
+
+
+
+
+
+
+
+
+
+
 
 
