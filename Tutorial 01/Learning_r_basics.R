@@ -308,24 +308,82 @@ t = M %*% t(M)
 print(t)
 
 
+# ----------------------------- R - DECISION MAKING ---------------------------
+x = 20
+
+if(is.numeric(x)){
+  print("x is a numeric")
+}
 
 
+x <- c("what","is","truth")
 
+if("Truth" %in% x){
+  print("Truth is found")
+  
+} else {
+  print("Truth is not found")
+  
+}
 
+x <- switch(
+  4,
+  "first",
+  "second",
+  "third",
+  "fourth"
+)
+print(x)
 
+# ------------------------------ R-Loops ------------------------------------
 
+v <- c("Hello","loop")
+count <- 2
 
+# REPEAT LOOP
+repeat{
+  print(v)
+  count <- count + 1
+  if(count > 5){
+    break
+  }
+}
 
+# WHILE LOOP
+v <- c("Hello","while loop")
+count <- 2
+while (count < 7){
+  print(v)
+  count = count + 1
+}
 
+# FOR LOOP
+v <- LETTERS[1:4]
+for ( index in v) {
+  print(index)
+}
 
+# Break Statements
+v <- c("Hello","loop")
+cnt <- 2
+repeat{
+  print(v)
+  cnt <- cnt+1
+  if(cnt > 5){
+    break
+  }
+}
 
+# next is like continue in python
+v <- LETTERS[1:6]
+for ( i in v){
+  if (i == "D"){
+    next
+  }
+  print(i)
+}
 
-
-
-
-
-
-
+# -------------------------------------- FUNCTIONS ------------------------------
 
 
 
